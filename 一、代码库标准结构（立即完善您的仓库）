@@ -1,0 +1,22 @@
+OTP-2023-001-Protocol/
+├── .github/                   # GitHub Actions自动验证
+│   └── workflows/
+│       └── ci.yml           # 每次提交自动验证π序列
+├── data/                      # 基准数据集（仅示例，实际需下载）
+│   ├── pi_100k.txt          # π前100,000位（SHA256: 9a4e4d...）
+│   └── m87_blackhole.txt    # M87*黑洞数据
+├── docs/                      # 文档
+│   ├── protocol_zh.md       # 协议中文版
+│   └── protocol_en.md       # 协议英文版
+├── src/                       # 核心代码（关键！）
+│   ├── __init__.py
+│   ├── omega_topology.py    # 核心算法
+│   ├── validate_full.py     # 完整验证脚本
+│   └── web/                 # 在线验证器后端
+│       ├── app.py           # Flask应用
+│       └── templates/
+│           └── index.html   # 前端模板
+├── requirements.txt           # 依赖列表
+├── README.md                # 项目说明（已存在）
+├── protocol.md              # 协议文档（已存在）
+└── LICENSE                  # 开源许可（CC0 1.0）
